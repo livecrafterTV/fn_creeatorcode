@@ -6,6 +6,21 @@
   --secondary-color: #103063;
   --secondary-color-hover: #143f85;
   --light-color:#f4f4f4;
+  --dark-color: #0c0c0c;
+}
+*
+{
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+
+.column {
+  flex: 50%;
+  padding: 10px;
 }
 body {
     font-family: 'PT Sans', sans-serif;
@@ -35,10 +50,26 @@ body {
   #landing h2{
     font-size: 2rem;
   }
+  #howtouse
+  {
+    background-color: white;
+  }
+  .text-dark
+  {
+    color: var(--dark-color);
+  }
+  #color_2
+  {
+    color: black;
+  }
   img{
     width: 100%;
   }
-  a {
+  #howtouse a {
+    text-decoration: none;
+    color: white;
+  }
+  #about a {
     text-decoration: none;
     color: #ccc;
   }
@@ -218,3 +249,39 @@ body {
     zoom: 1;
   }
   
+
+/*Footer*/  
+#footer{width:100%;background-color:black;}
+.footer2 {
+    background-color: black;
+    width: 25%;
+    height: 200px;
+    float:left;
+    text-align: center;
+    color: #FFF;
+    font-size: small;
+    padding-top: 10px;
+}
+
+.footer2 ul {
+    text-align: left;
+         height: auto;
+    margin: 0px;
+}
+
+
+.footer2 ul li {
+list-style:none;
+padding: 5px;
+}
+
+.footer2 ul li a {
+    text-decoration: none;
+    color: #FFF;
+    padding: 0px 8px 8px 8px;
+}
+
+.footer2 ul li a:hover {
+    text-decoration: underline;
+    font-weight:900;
+}
